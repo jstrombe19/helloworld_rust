@@ -20,4 +20,8 @@ fn main () {
   // placeholders can also be used to print variables
   let a = "This is an arbitrary variable.";
   println!("{}", a);
+
+  let be = false;
+  println!("{}", be);
+  println!("{}", !be);
 }
