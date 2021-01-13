@@ -24,4 +24,14 @@ fn main () {
   let be = false;
   println!("{}", be);
   println!("{}", !be);
+
+  const MAX:i32 = 10;
+  println!("MAX = {}", MAX);
+
+  const MIN:i32 = MAX - 4;
+  println!("MIN = {}", MIN);
+
+  let s = String::new();
+  s = String::from("Hello");
+  println!("{}", s);
 }

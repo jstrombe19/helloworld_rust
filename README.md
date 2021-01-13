@@ -28,3 +28,14 @@ Rust has 2 primitive types for floating-point numbers: f32 and f64
 * Rust will not automatically cast an integer value as a float - even if the value is a whole number, it must be entered with the .0 included to avoid compilation failure
 
 ** VARIABLES IN RUST, BY DEFAULT, ARE IMMUTABLE **
+
+* in order to make variables mutable, the keyword 'mut' must be appended to its definition as follows:
+let mut variable = value
+
+variably constant
+
+variables defined with 'let' will be immutable unless the 'mut' keyword is included in their declaration; however, there are still constants in Rust
+
+* constants are absolutely fixed variables - they cannot be changed at any point after their assignment
+
+* constants' data types must also be explicitly defined
