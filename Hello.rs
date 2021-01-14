@@ -49,7 +49,9 @@ fn main () {
 
   // below illustrates simple operators in action as well as passing multiple values to a println! function
   let mut c = 10;
-  println!("The initial value of c is {}. In the next line, it will be incremented by a previously specified value 'MAX', whose value is {}.", c, MAX);
+  println!("The initial value of c is {}. In the next line, 
+    it will be incremented by a previously specified value 
+    'MAX', whose value is {}.", c, MAX);
   c += MAX;
   println!("The new value of c is {}", c);
 
@@ -62,5 +64,27 @@ fn main () {
   let d:char = 'c';
   println!("The value of d3 - a char variable - is {}", d);
   let d:f64 = 1.32;
-  println!("The value of d4 - and f64 variable - is {}", d);
+  println!("The value of d4 - an f64 variable - is {}", d);
+  
+  // typecasting
+  
+  let f:i32 = 10;
+  println!("The value of f - an i32 variable - is {}", f);
+  let g:i64 = f.into();
+  println!("The value of g - an i64 variable - is {}", g);
+  
+  
+  let h:i32 = 10;
+  println!("The value of f - an i32 variable - is {}", h);
+  let i:f64 = h.into();
+  println!("The value of g - an f64 variable - is {}", i);
+
+  let j:f64 = 47.12485720981247;
+  println!("The sum of i (which is an f64 variable typecast from h - 
+    an i32 variable with a value of 10) and j (another f64 variable 
+    with a value of 47.12485720981247) is {}", i+j);
+  // asd
+
+  
+
 }
