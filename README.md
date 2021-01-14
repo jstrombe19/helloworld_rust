@@ -45,3 +45,7 @@ STRINGS
 - Rust has only one string type in its *core* language - the string slice (&str)
 * The Rust standard library provides an additional string type (string), which provides additional behavior such as mutability
 * string slices are immutable
+
+OPERATORS
+
+Rust supports all but two standard operators. +, -, /, *, %, <, > are all supported; ++ and -- are not.
