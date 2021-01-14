@@ -31,7 +31,19 @@ fn main () {
   const MIN:i32 = MAX - 4;
   println!("MIN = {}", MIN);
 
-  let s = String::new();
+  // this is a string from the Rust standard library
+  let mut s = String::new();
+  println!("This is the value of a new string s: {}", s);
+  /* 
+  If you are going to create a string in this way, where an empty string is instantiated above and defined later, 
+  the only way to properly define its value is to use the String::from() method - if you attempt to strictly 
+  define a new value, it will not compile because defining the value of a string directly is defining a string 
+  slice while instantiating an empty string above is the string type from the standard Rust library
+  */
   s = String::from("Hello");
-  println!("{}", s);
+  println!("This is the new value assigned to the string s: {}", s);
+
+  // this is a string slice
+  let str = "Hello";
+  println!("{}", str);
 }

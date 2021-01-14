@@ -39,3 +39,9 @@ variables defined with 'let' will be immutable unless the 'mut' keyword is inclu
 * constants are absolutely fixed variables - they cannot be changed at any point after their assignment
 
 * constants' data types must also be explicitly defined
+
+STRINGS
+
+- Rust has only one string type in its *core* language - the string slice (&str)
+* The Rust standard library provides an additional string type (string), which provides additional behavior such as mutability
+* string slices are immutable
