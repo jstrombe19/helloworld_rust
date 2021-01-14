@@ -25,7 +25,7 @@ fn main () {
   println!("{}", be);
   println!("{}", !be);
 
-  const MAX:i32 = 10;
+  const MAX:i32 = 127;
   println!("MAX = {}", MAX);
 
   const MIN:i32 = MAX - 4;
@@ -46,4 +46,10 @@ fn main () {
   // this is a string slice
   let str = "Hello";
   println!("{}", str);
+
+  // below illustrates simple operators in action as well as passing multiple values to a println! function
+  let mut c = 10;
+  println!("The initial value of c is {}. In the next line, it will be incremented by a previously specified value 'MAX', whose value is {}.", c, MAX);
+  c += MAX;
+  println!("The new value of c is {}", c);
 }
