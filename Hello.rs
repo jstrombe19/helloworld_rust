@@ -52,4 +52,15 @@ fn main () {
   println!("The initial value of c is {}. In the next line, it will be incremented by a previously specified value 'MAX', whose value is {}.", c, MAX);
   c += MAX;
   println!("The new value of c is {}", c);
+
+  // shadowing
+
+  let d:f32 = 1.32;
+  println!("The value of d1 - an f32 variable - is {}", d);
+  let d:i8 = 4;
+  println!("The value of d2 - an i8 variable - is {}", d);
+  let d:char = 'c';
+  println!("The value of d3 - a char variable - is {}", d);
+  let d:f64 = 1.32;
+  println!("The value of d4 - and f64 variable - is {}", d);
 }

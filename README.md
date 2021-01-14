@@ -49,3 +49,9 @@ STRINGS
 OPERATORS
 
 Rust supports all but two standard operators. +, -, /, *, %, <, > are all supported; ++ and -- are not.
+
+SHADOWING
+
+Rust allows users to define multiple variables with the same name in the same scope, with the same or different assigned values. This is not the same as making a variable mutable. Mutable variables are variables whose assigned values may be changed throughout the course of a program. The value is changed, but it is a single variable throughout. Shadowing is declaring multiple variables of the same name but with different values. Because each variable is unique, each can have a different value - not only within the same data type but even values of different data types. Order of operations is paramount with shadowing, as only the most recent variable is accessible at any point in the execution of the code. If I have a variable 'd', d1 (the first instance of d) is available throughout the program at any point after its declaration and definition until the second instance of 'd' (d2) is declared. After d2 is declared and defined, only d2 is available - access to d1 is no longer available.
+
+Though this poses some potential pitfalls, it also enables developers to define a single variable to do things like capture user inputs of varying data types, perform basic operations with them, and then overwrite the initial variable with a new instance, saving code effort. The code structure and use of the user inputs must be identical in this instance, but it simplifies otherwise complex solutions.
